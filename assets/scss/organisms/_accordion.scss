@@ -1,0 +1,55 @@
+.asp-accrdn {
+    padding: 10px 6px;
+
+    .accordion {
+        outline: none;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 20px;
+    }
+
+    .accordion-button {
+        font-weight: bold;
+        color: #414141;
+        font-size: 24px;
+    }
+
+    .accordion-button:focus {
+        z-index: 3;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+    }
+
+    .accordion-button[aria-expanded=false] {
+        &::after {
+            content: "";
+            position: absolute;
+            right: 24px;
+            width: 28px;
+            height: 28px;
+            top: 16px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(/assets/images/down_arrow.svg)
+        }
+    }
+    .accordion-button[aria-expanded=true] {
+        &::after {
+            content: "";
+            position: absolute;
+            right: 24px;
+            width: 28px;
+            height: 28px;
+            top: 16px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(/assets/images/down_arrow.svg)
+        }
+    }
+}
