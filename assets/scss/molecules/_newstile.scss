@@ -41,6 +41,10 @@
     &__copy {
         font-size: 16px;
         color: #414141;
+        width: 300px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
     }
 
     &__previewbtn {
@@ -64,6 +68,10 @@
 @include tablet-pro {
     .asp-newstile {
 
+        &__copy {
+            width: 300px;
+        }
+
         &__headwrap {
             width: 60%;
         }
@@ -77,6 +85,10 @@
 
 @include tablet {
     .asp-newstile {
+
+        &__copy {
+            width: 220px;
+        }
 
         &__wrap {
             padding: 20px;
@@ -107,6 +119,10 @@
 @include mobile {
     .asp-newstile {
         margin: 30px 20px;
+
+        &__copy {
+            width: 165px;
+        }
 
         &__wrap {
             padding: 20px 20px;
