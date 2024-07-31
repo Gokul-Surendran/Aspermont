@@ -65,5 +65,10 @@
 
     .accordion-item {
         border-radius: 15px;
+        border: none;
+        overflow: hidden;
+    }
+    .accordion-button:not(.collapsed)  {
+        box-shadow: none;
     }
 }
