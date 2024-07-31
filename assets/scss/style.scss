@@ -9,8 +9,13 @@
 
 // atoms
 @import "atoms/dropdown";
-// molecule
+@import "./atoms/asp-button";
 
+// molecule
+@import "./molecules/newstile";
 // organisms
 @import './organisms/accordion';
+@import "./organisms/footer";
+@import "./organisms/asp-header";
+
 // pages

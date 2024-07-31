@@ -1,0 +1,130 @@
+.asp-newstile {
+    margin: 40px 60px;
+    
+
+    &__wrap {
+        display: flex;
+        padding: 20px 40px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width: 100%;
+    }
+
+    &__headwrap {
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        img {
+            width: 83px;
+            height: 83px;
+        }
+    }
+
+    &__content {
+        margin-left: 40px;
+    }
+
+    &__thinhead {
+        font-size: 14px;
+        font-weight: 300;
+        color: #414141;
+    }
+
+    &__head {
+        font-size: 18px;
+        font-weight: 600;
+        color: #033162;
+    }
+
+    &__copy {
+        font-size: 16px;
+        color: #414141;
+    }
+
+    &__previewbtn {
+        font-size: 18px;
+        a {
+            color: #A91E25;
+            text-decoration: none;
+        }
+    }
+
+    &__btnwrap {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        padding-right: 20px;
+        align-items: center;
+    }
+}
+
+@include tablet-pro {
+    .asp-newstile {
+
+        &__headwrap {
+            width: 60%;
+        }
+
+        &__btnwrap {
+            width: 40%;
+            padding-right: 0px;
+        }
+    }
+}
+
+@include tablet {
+    .asp-newstile {
+
+        &__wrap {
+            padding: 20px;
+        }
+
+        &__logo {
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        &__content {
+            margin-left: 20px;
+        }
+
+        &__headwrap {
+            width: 55%;
+        }
+
+        &__btnwrap {
+            width: 45%;
+            padding-right: 0px;
+        }
+    }
+}
+
+@include mobile {
+    .asp-newstile {
+        margin: 30px 20px;
+
+        &__wrap {
+            padding: 20px 20px;
+            flex-direction: column;
+        }
+
+        &__headwrap {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        &__btnwrap {
+            width: 100%;
+            padding-right: 0px;
+            flex-direction: column;
+        }
+
+        &__previewbtn {
+            padding-bottom: 15px;
+        }
+    }
+}
