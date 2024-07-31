@@ -3,21 +3,35 @@
    width: 175px;
    border: 1px solid #fff;
    border-radius: 8px;
-   background-color: #172B48;
+   background-color: transparent;
    text-align: center;
-   padding: 6px 8px;
+   padding: 6px 10px;
+   cursor: pointer;
    &__link {
       font-size: 16px;
       color: #fff;
-      text-decoration: none;
       &:hover {
          color: #fff;
+         text-decoration: underline;
       }
    }
    &--red {
       background-color: #A91E25;
+      border: 1px solid #A91E25;
       svg {
          margin: 0 0 4px 4px;
+      }
+      &:hover {
+         background-color: #fff;
+         border: 1px solid #A91E25;
+         transition: 0.3s ease-in-out;
+         .asp-btn__link {
+            text-decoration: none;
+            color: #A91E25;
+         }
+         svg path {
+            fill: #A91E25;
+         }
       }
    }
 }
