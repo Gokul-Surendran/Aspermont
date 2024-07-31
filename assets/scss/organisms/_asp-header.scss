@@ -14,7 +14,8 @@
    }
    &__right, 
    &__profile,
-   &__controls {
+   &__controls,
+   &__controls a {
       display: flex;
       align-items: center;
    }
@@ -28,6 +29,23 @@
    }
    &__searchimg {
       margin-left: 16px;
+   }
+   &__ipouter {
+      display: none;
+      margin-left: 16px;
+   }
+   &__ipouter.active {
+      display: block;
+   }
+   &__input {
+      border: none;
+      outline: none;
+      padding: 6px 12px;
+      border-radius: 20px; 
+      color: #033162; 
+   }
+   &__search {
+      display: flex;
    }
 }
 
@@ -43,6 +61,16 @@
       }
       &__controls {
          margin-bottom: 20px;
+         flex-direction: column;
+      }
+      &__profile {
+         border-right: 0;
+      }
+      &__search {
+         margin-top: 20px;
+      }
+      &__ipouter {
+         display: block;
       }
    }
 }
