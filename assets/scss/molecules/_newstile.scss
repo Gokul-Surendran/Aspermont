@@ -1,0 +1,151 @@
+.asp-newstile {
+    // margin: 40px 60px;
+    
+
+    &__wrap {
+        display: flex;
+        padding: 10px 40px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width: 100%;
+    }
+
+    &__headwrap {
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 10%;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        margin-left: 40px;
+    }
+
+    &__thinhead {
+        font-size: 14px;
+        font-weight: 300;
+        color: #414141;
+    }
+
+    &__head {
+        font-size: 18px;
+        font-weight: 600;
+        color: #033162;
+    }
+
+    &__copy {
+        font-size: 16px;
+        color: #414141;
+        width: 300px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
+
+    &__previewbtn {
+        font-size: 18px;
+        a {
+            color: #A91E25;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+
+    &__btnwrap {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        padding-right: 20px;
+        align-items: center;
+    }
+}
+
+@include tablet-pro {
+    .asp-newstile {
+
+        &__copy {
+            width: 300px;
+        }
+
+        &__headwrap {
+            width: 60%;
+        }
+
+        &__btnwrap {
+            width: 40%;
+            padding-right: 0px;
+        }
+        &__logo {
+            width: 20%;
+        }
+    }
+}
+
+@include tablet {
+    .asp-newstile {
+
+        &__copy {
+            width: 220px;
+        }
+
+        &__wrap {
+            padding: 20px;
+        }
+
+        &__logo {
+            width: 30%;
+        }
+
+        &__content {
+            margin-left: 20px;
+        }
+
+        &__headwrap {
+            width: 55%;
+        }
+
+        &__btnwrap {
+            width: 45%;
+            padding-right: 0px;
+        }
+    }
+}
+
+@include mobile {
+    .asp-newstile {
+        margin: 30px 20px;
+
+        &__copy {
+            width: 165px;
+        }
+
+        &__wrap {
+            padding: 20px 20px;
+            flex-direction: column;
+        }
+
+        &__headwrap {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        &__btnwrap {
+            width: 100%;
+            padding-right: 0px;
+            flex-direction: column;
+        }
+
+        &__previewbtn {
+            padding-bottom: 15px;
+        }
+
+        &__logo {
+            width: 100%;
+        }
+    }
+}

@@ -8,11 +8,14 @@
 @import "./base/dev";
 
 // atoms
+@import "atoms/dropdown";
 @import "./atoms/asp-button";
 
 // molecule
-
+@import "./molecules/newstile";
 // organisms
+@import './organisms/accordion';
+@import "./organisms/footer";
 @import "./organisms/asp-header";
 
 // pages
