@@ -1,10 +1,10 @@
 .asp-newstile {
-    margin: 40px 60px;
+    // margin: 40px 60px;
     
 
     &__wrap {
         display: flex;
-        padding: 20px 40px;
+        padding: 10px 40px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         width: 100%;
     }
@@ -16,9 +16,9 @@
     }
 
     &__logo {
+        width: 10%;
         img {
-            width: 83px;
-            height: 83px;
+            width: 100%;
         }
     }
 
@@ -71,6 +71,9 @@
             width: 40%;
             padding-right: 0px;
         }
+        &__logo {
+            width: 20%;
+        }
     }
 }
 
@@ -82,10 +85,7 @@
         }
 
         &__logo {
-            img {
-                width: 70px;
-                height: 70px;
-            }
+            width: 30%;
         }
 
         &__content {
@@ -125,6 +125,10 @@
 
         &__previewbtn {
             padding-bottom: 15px;
+        }
+
+        &__logo {
+            width: 100%;
         }
     }
 }
