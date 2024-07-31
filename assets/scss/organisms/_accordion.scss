@@ -1,6 +1,16 @@
 .asp-accrdn {
     padding: 10px 6px;
 
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        p {
+            color: #D32027;
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
     .accordion {
         outline: none;
         border: none;
@@ -51,5 +61,9 @@
             background-position: center;
             background-image: url(/assets/images/down_arrow.svg)
         }
+    }
+
+    .accordion-item {
+        border-radius: 15px;
     }
 }
