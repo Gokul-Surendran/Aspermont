@@ -58,7 +58,7 @@
    }
 }
 
-@include mobile {
+@include mobile-tablet {
    .asp-header {
       flex-direction: column;
       padding: 20px 0px;
