@@ -2,10 +2,11 @@
 .asp-redbtn {
    &__outer {
       display: none;
-      width: 192px;
+      min-width: 180px;
+      max-width: fit-content;
       border-radius: 8px;
       text-align: center;
-      padding: 6px 10px;
+      padding: 8px 24px;
       cursor: pointer;
       border: 1px solid #A91E25;
       background-color: #A91E25;
@@ -17,23 +18,33 @@
       }
    }
    &__outer2 {
-      width: 192px;
+      width: auto;
       border-radius: 8px;
       text-align: center;
-      padding: 6px 10px;
+      padding: 8px 24px;
+      min-width: 180px;
+      max-width: fit-content;
       cursor: pointer;
       border: 1px solid #A91E25;
       background-color: transparent;
       &:hover {
-         opacity: 0.8;
+         background-color: #A91E25;
          transform: translateY(1px);
-         transition: transform 0.3s ease-in-out;
+         transition: 0.3s;
+         .asp-redbtn__link {
+            color: #fff;
+         }
+         svg {
+            path {
+               fill: #fff;
+            }
+         }
       }
       .asp-redbtn__link {
          color: #A91E25;
-         &:hover {
-            color: #A91E25;
-         }
+         // &:hover {
+         //    color: #A91E25;
+         // }
       }
    }
    svg {
@@ -48,6 +59,19 @@
    &.subscribed {
       .asp-redbtn__outer {
          display: block;
+         transition: 0.3s;
+         &:hover {
+            transition: 0.3s;
+            background-color: #fff;
+            .asp-redbtn__link {
+               color: #A91E25;
+            }
+            svg {
+               path {
+                  fill: #A91E25;
+               }
+            }
+         }
       }
       .asp-redbtn__outer2 {
          display: none;
