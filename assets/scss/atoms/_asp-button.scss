@@ -6,36 +6,11 @@
    background-color: transparent;
    text-align: center;
    padding: 6px 10px;
-   cursor: pointer;
-   &__link {
-      font-size: 16px;
-      color: #fff;
-      &:hover {
-         color: #fff;
-         text-decoration: underline;
-      }
-   }
-   &.subscribed {
-      .asp-btn__outer {
-         display: block;
-      }
-      .asp-btn__outer2 {
-         display: none;
-      }
-   }
-   &__outer {
-      display: none;
-   }
-   &--red {
-      background-color: #A91E25;
-      border: 1px solid #A91E25;
-      svg {
-         margin: 0 0 4px 4px;
-      }
-      &:hover {
-         .asp-btn__link {
-            text-decoration: none;
-         }
-      }
+   font-size: 16px;
+   color: #fff;
+   &:hover {
+      color: #033162;
+      background-color: #fff;
+      transition: 0.2s ease-in-out;
    }
 }
